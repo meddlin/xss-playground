@@ -1,0 +1,48 @@
+<script type="text/javascript">
+    function test() {
+        let input = document.getElementById('input-field').value;
+
+        let response = fetch('http://localhost:3000/test', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                input: input
+            })
+        }).then((response) => {
+            return response.json();
+            // return response.text();
+        }).then((data) => {
+            console.log(`data: ${JSON.stringify(data)}`);
+
+            let display = document.getElementById('response-display');
+            display.innerHTML = data.message.input;
+        });
+    }
+</script>
+<script type="text/javascript" src="./file.js"></script>
+
+<!-- <script 
+    src="https://unpkg.com/htmx.org@1.9.4" 
+    integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" 
+    crossorigin="anonymous"></script> -->
+
+<html>
+    <body>
+        <h2>XSS Test Client</h2>
+        
+        <p>
+            <span>display here</span>
+            <p id="response-display"></p>
+        </p>
+
+        <div>
+            <input id="input-field" />
+        </div>
+        <div>
+            <button id="btn-click" onclick="test()">Click me</button>
+        </div>
+    </body>
+</html>
+
