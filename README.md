@@ -25,6 +25,15 @@ Reference: [https://github.com/payloadbox/xss-payload-list](https://github.com/p
 
 ## Notes
 
-Getting the server started
+**Getting the server started**
+
+This was used to build the server and create a basic REST endpoint.
 
 - [https://medium.com/@onejohi/building-a-simple-rest-api-with-nodejs-and-express-da6273ed7ca9](https://medium.com/@onejohi/building-a-simple-rest-api-with-nodejs-and-express-da6273ed7ca9)
+
+**Serving static files from express**
+
+This was used to host the webpage from express. It's not necessary to use the `index.html` file, but 
+most XSS tools want to point at a URL. So, that's why this was necessary to make the exercise work.
+
+- [https://stackoverflow.com/questions/10434001/static-files-with-express-js](https://stackoverflow.com/questions/10434001/static-files-with-express-js)
