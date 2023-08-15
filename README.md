@@ -39,3 +39,9 @@ This was used to host the webpage from express. It's not necessary to use the `i
 most XSS tools want to point at a URL. So, that's why this was necessary to make the exercise work.
 
 - [https://stackoverflow.com/questions/10434001/static-files-with-express-js](https://stackoverflow.com/questions/10434001/static-files-with-express-js)
+
+
+## Other Learning Resources
+
+- XSS Game AppSpot: [https://xss-game.appspot.com/](https://xss-game.appspot.com/)
+- pwnfunction: [https://xss.pwnfunction.com/](https://xss.pwnfunction.com/)
