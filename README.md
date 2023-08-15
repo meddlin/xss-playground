@@ -1,5 +1,7 @@
 # XSS Playground
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 This is a contrived and purposely vulnerable web application made to play with XSS vulnerabilities and exploits.
 
 ## Getting Started
